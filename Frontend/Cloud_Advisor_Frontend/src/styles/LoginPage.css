@@ -1,0 +1,128 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  /* background-image: url('C:\Users\varsh\OneDrive\Documents\AWS Cloud Advisor Project\aws_cloud_advisor final ui\aws_cloud_advisor\Frontend\src\cloud1.jpg'); Adjust the path as necessary */
+  background-image: url('cloud1.jpg');
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* Other CSS rules for login form elements */
+.login-card {
+  background: rgb(161, 176, 194);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: 40%;
+  text-align: center;
+}
+
+.login-title {
+  color: black;
+  font-weight: 500px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login-btn {
+  background-color: #007bff;
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  background-color: #448df2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+.dropdown {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.back-btn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  background-color: #ff4b5c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #d7384c;
+}
+
+.submit-btn {
+  background-color: #4fa1f9;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  background-color: #5b92f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #08388b;
+}

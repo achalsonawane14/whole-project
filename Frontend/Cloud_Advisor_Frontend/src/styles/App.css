@@ -1,0 +1,178 @@
+/* App.css */
+.app {
+  text-align: center;
+  padding: 20px;
+  overflow: auto; /* Ensure content is scrollable */
+  height: 100vh;
+}
+
+.filters label {
+  margin-right: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.graph-title {
+  margin-top: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color:darkblue;
+  font-size: 30px;
+}
+
+/* Bar Graph */
+.bar-chart-container {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Donut Chart Wrapper */
+.donut-chart-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.donut-chart-container {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  width: 550px;
+  padding-left: 20%;
+}
+
+.donut-chart-container canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.donut-chart-legend {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.legend-color-box {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.legend-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  word-wrap: break-word;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.legend-color-box {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.legend-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Metrics */
+.metrics-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.metric {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.metric h2 {
+  font-size: 24px;
+}
+
+.metric p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 10px;
+  z-index: 10;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  .donut-chart-wrapper {
+    flex-direction: column;
+  }
+
+  .donut-chart-container,
+  .donut-chart-legend {
+    max-width: 100%;
+  }
+}
+
+/* .fetch-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+} */
+
+.fetch-btn:hover {
+  background-color: #0056b3;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+}
+
+.service-list li {
+  background-color: #e9ecef;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.service-list li:hover {
+  background-color: #d6d8db;
+}
+
+.service-details {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
