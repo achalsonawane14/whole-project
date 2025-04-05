@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "cloudcostadvisor",
+  "private_key_id": "9322ef64a8b50c222887fdd4c9a1337bff513864",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC9tdwL24pYlI5S\nXg/wUkXVuNsVyty+2Mwp2LQ3NDdrRzvGOAQ1mgGE+98HhH6dvxsXU3Kvzfs7rM7c\n4AK8oiTjKlw9kxxCoo8soMh2FnXlFk8t5DdHu1P7nxiEJDZyV2TX216zM+f3nEKA\n+alx2CrYQyWqLLIARBOEN0vah6WAkYNaO+W4A8130PNjadaOH1XLtOffw/cZJ++B\neovF9eMYpCbfr+vo6YyEkENmJH1KzX2nx6H0Y3Sdrfo/xI3/o1E70LmXcyOuGBPx\nT2WqHHWACuST5Pp+s20jcLPHeEFWo/b6qgqE3rxie004NmU9XMjDp638l7n7QzG6\n+tNIqgG3AgMBAAECggEAGD6+vEaMMXKYQc9DADazisiQ5Kxuy8vkmSXYhQRHtOPU\nsCoxN4coJzkSsYuYVva5MqD36PSikBIvbyuzOIJhw8/XxrLKC3tqYDdoMddVrTfN\nr2gZkdxPXmVgemWFDoCReG4mddvuCxzNpF1umghuFAIjin0jKUTfWFLCKfqTXJEu\niLSufkkr66+XgSjRtn721AHfHbQxcfJ2pqTFGWd0vZZScuwWm60UhJOfmCoGLFvt\nz350ug/1QOcbYphGYdmBZOgMDlxWhgr9lqjrWsFeMUoRPFdfprqCMpj0J4/REc8X\nY3IPUx7s4nZqfnN4NWlMjYFCUGUwbGUE1B3obY+XaQKBgQDmLFMgUYgqcNsJ3jx9\n0g2RLjwldkzI/KMtMQKAijoKeMJ1UOAaRKy3pnF33YkgYlfI7M4Lme7U/Be5Gdgv\n14JXTF0dGFjVGmTAP8XFkkC46EmrO3hWlydAxdu7/s1v5lrWvXazZmuegPNr3FKV\nQP2eJMwCPaigy8eSx+o+QNZ6lQKBgQDS/0AuHbf0gcY+6l34BKkLGSfurCiVXW5B\nW8PXkti+7a/0Fv3njbC8u2T6BNVnvJNuGkxW9Nj/qN7l5rH9Z8c4eoSQ0YizOaQd\n8NopudbrU5kBUWVv+M0yagRiSUOfWr4m+jrOHLMo7GHb7sPFSBh7RtPFNOYBfXsS\n+BND8C3EGwKBgFd0ff0onWkqyj78ntVbq2X/QEEnqtMvEr0IAyBd5OG3soMqwIua\njlmVN0XI+eJBG4OvXjaQPWvVgRoGlNrQsqiCzlpQtuf5iFB3qqiAAnF/aQZTqUyV\nUAfPZccPcHVU/Czdfi15++gUrOjNpN8q+3JMHuu3C8xUwTanGPygXB3lAoGBAMCw\nDiKPTVFjunH2gn5fcykJfig+3IkbW/cgIIecOYiTdB6LaLCv+vlAgYS6KVGlK1Zf\nedvnmsxPoc9+kImE3rC7YpkGYbqbJz+YlwOIDbe3DoHfna1WH76shvhjQ/ghXIon\n9tAH8a2rweqh7/MYVhMuqXLtTieKOn0mRCHFE2aFAoGBAJW8DuJ+Sd+Fo/1JaHK2\nue9RnUGEEJvJUI1dPblp+HdHhz2P3W6nKzPyQvr/yG8mkJWH4qfLN140wOb1hV3U\nf4/UWmh9XGjjNI2GPx4mt4EYOLjt2TXZ6DdoDrZXEavsI3IJEcJmmmyY5vX/7OWG\nd3B0qP5z0DzI81rNTxcb/GXo\n-----END PRIVATE KEY-----\n",
+  "client_email": "cloudcostadvisor-15@cloudcostadvisor.iam.gserviceaccount.com",
+  "client_id": "108851841288294842696",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloudcostadvisor-15%40cloudcostadvisor.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
