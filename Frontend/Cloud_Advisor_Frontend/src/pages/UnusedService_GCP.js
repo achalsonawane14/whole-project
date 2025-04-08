@@ -1,32 +1,36 @@
 import React, { useState, useEffect } from "react";
 
-const UnusedService_AWS = () => {
+const UnusedService_GCP = () => {
   const [services, setServices] = useState([]);
   const [selectedService, setSelectedService] = useState(null);
   const [serviceDates, setServiceDates] = useState([]);
 
-  const API_URL = "http://127.0.0.1:5002/api/aws-unused-services";
+  const API_URL = "http://127.0.0.1:5002/api/gcp-unused-services";
 
   useEffect(() => {
     fetch(API_URL)
       .then((response) => response.json())
       .then((data) => {
-        const uniqueServices = [...new Set(data.map((item) => item.service))];
+        const servicesData = data.unused_services; // ✅ correct
+        const uniqueServices = [...new Set(servicesData.map((item) => item.service))];
         setServices(uniqueServices);
       })
-      .catch((error) => console.error("❌ Error fetching AWS services:", error));
+      .catch((error) => console.error("❌ Error fetching GCP services:", error));
   }, []);
+  
 
   const handleServiceClick = (serviceName) => {
     fetch(API_URL)
       .then((response) => response.json())
       .then((data) => {
-        const filteredDates = data
+        const servicesData = data.unused_services; // ✅ correct
+        const filteredDates = servicesData
           .filter((item) => item.service === serviceName)
           .map((item) => item.date);
         setSelectedService(serviceName);
         setServiceDates([...new Set(filteredDates)]);
       })
+      
       .catch((error) => console.error("❌ Error fetching dates:", error));
   };
 
@@ -52,26 +56,26 @@ const UnusedService_AWS = () => {
                   padding: "12px",
                   fontSize: "14px",
                   cursor: "pointer",
-                  background: "#28a745",
+                  background: "#DB4437",
                   color: "white",
                   border: "none",
                   borderRadius: "5px",
                   textAlign: "center",
                   transition: "background 0.3s",
                 }}
-                onMouseOver={(e) => (e.target.style.background = "#218838")}
-                onMouseOut={(e) => (e.target.style.background = "#28a745")}
+                onMouseOver={(e) => (e.target.style.background = "#C23321")}
+                onMouseOut={(e) => (e.target.style.background = "#DB4437")}
               >
                 {service}
               </button>
             ))
           ) : (
-            <p>Loading AWS services...</p>
+            <p>Loading GCP services...</p>
           )}
         </div>
       ) : (
         <div>
-          <h3 style={{ color: "#28a745", fontWeight: "bold", fontSize: "24px", marginBottom: "23px", marginTop: "1px" }}>
+          <h3 style={{ color: "#DB4437", fontWeight: "bold", fontSize: "24px", marginBottom: "23px", marginTop: "1px" }}>
             "{selectedService}"
           </h3>
 
@@ -125,4 +129,4 @@ const UnusedService_AWS = () => {
   );
 };
 
-export default UnusedService_AWS;
+export default UnusedService_GCP;

@@ -36,9 +36,9 @@ const Sidebar = () => {
       img: utilizerLogo,
       path:
         selectedCloud === "aws"
-          ? "/UnusedService_AWS"
+          ? "UnusedService_AWS"
           : selectedCloud === "azure"
-          ? "/UnusedService_AZURE"
+          ? "UnusedService_Azure"
           : "/UnusedService_GCP",
     },
     {

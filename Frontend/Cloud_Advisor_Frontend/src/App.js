@@ -7,6 +7,8 @@ import GCPDashboard from './pages/GCPDashboard'; // Import GCPDashboard
 import LoginPage from './pages/LoginPage';
 import './styles/App.css';
 import UnusedService_AWS from './pages/UnusedService_AWS';
+import UnusedService_Azure from './pages/UnusedService_Azure';
+import UnusedService_GCP from './pages/UnusedService_GCP';
 import MainPage from './pages/MainPage'; 
 
 //import UnusedServices from "./pages/UnusedServices";
@@ -24,7 +26,8 @@ function App() {
            <Route path="/azure" component={AzureDashboard} />
            <Route path="/GCPDashboard" component={GCPDashboard} /> Add GCPDashboard route 
           <Route path="/UnusedService_AWS" component={UnusedService_AWS} />
-
+          <Route path="/UnusedService_Azure" component={UnusedService_Azure} />
+          <Route path="/UnusedService_GCP" component={UnusedService_GCP} />
         </Switch>
       </div>
       {/* <div className="app">
