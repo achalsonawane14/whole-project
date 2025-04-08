@@ -47,17 +47,12 @@ function LoginPage({ onLoginSuccess }) {
   };
 
   const handleSubmit = () => {
-    if (selectedOption === 'aws') {
-      history.push('/aws');
-    } else if (selectedOption === 'azure') {
-      history.push('/azure');
-    } else if (selectedOption === 'gcp') {
-      history.push('/GCPDashboard');
-    }
     if (selectedOption) {
+      localStorage.setItem("selectedCloud", selectedOption); // ✅ Store selected platform
       history.push(`/MainPage?dashboard=${selectedOption}`);
     }
   };
+  
 
   const handleBack = () => {
     setLoggedIn(false);

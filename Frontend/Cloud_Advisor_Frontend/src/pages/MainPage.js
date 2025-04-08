@@ -13,15 +13,46 @@ const Sidebar = () => {
 
   // Extract selected dashboard from URL query params
   const params = new URLSearchParams(location.search);
-  const selectedDashboard = params.get("dashboard");
+  const selectedCloud = localStorage.getItem("selectedCloud")// || "aws"; // Default to AWS if not set
 
   const menuItems = [
-    { name: "Cost Usage", img: costLogo, },
-    { name: "Service", img: serviceLogo }, // Changed path to aws_dashboard
-    { name: "Low Utilization", img: utilizerLogo, path: "/UnusedService_AWS" }, // Added path to unused.js
-    { name: "Optimization", img: optimizationLogo },
-    { name: "Account", img: accountLogo },
+    {
+      name: "Cost Usage",
+      img: costLogo,
+      path:
+        selectedCloud === "aws"
+          ? "/aws_dashboard"
+          : selectedCloud === "azure"
+          ? "/azure"
+          : "/GCPDashboard", // GCP case
+    },
+    {
+      name: "Service",
+      img: serviceLogo,
+      path: "/service", // example — add if you have service pages
+    },
+    {
+      name: "Low Utilization",
+      img: utilizerLogo,
+      path:
+        selectedCloud === "aws"
+          ? "/UnusedService_AWS"
+          : selectedCloud === "azure"
+          ? "/UnusedService_AZURE"
+          : "/UnusedService_GCP",
+    },
+    {
+      name: "Optimization",
+      img: optimizationLogo,
+      // Add platform-specific routing if needed
+    },
+    {
+      name: "Account",
+      img: accountLogo,
+      // Add platform-specific routing if needed
+    },
   ];
+  
 
   return (
     <div className="sidebar">
