@@ -68,7 +68,7 @@ function LoginPage({ onLoginSuccess }) {
 
         {loggedIn ? (
           <div>
-            <h2>Welcome, {username}!</h2>
+            <h2>Welcome, Cloud User!</h2>
             <label>Select Cloud Platform:</label>
             <select value={selectedOption} onChange={handleDropdownChange} className="dropdown">
               <option value="">Select</option>
